@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Live TV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2>Regions</h2>
+            <ul id="region-list">
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="player-section">
+                <video id="tv-player" class="video-js vjs-big-play-centered" controls preload="auto" width="640"
+                    height="360"></video>
+                <h2 id="current-channel-name">Select a Channel</h2>
+            </div>
+
+            <div class="channel-grid" id="channel-grid">
+            </div>
+        </main>
+    </div>
+
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
